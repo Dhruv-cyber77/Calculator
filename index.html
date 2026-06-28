@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="flex flex-col items-center justify-start h-screen">
+    <h1 class="text-4xl mt-10"><i class="fa-solid fa-calculator"></i> Calculator</h1>
+
+    <div class="calculator mt-15 p-5 pt-8 bg-yellow-400 w-70 rounded-2xl">
+        <input type="text"
+            class="flex justify-center items-center border border-solid border-black ml-3 mb-4 h-12 px-4 bg-white rounded-2xl"
+            readonly>
+        <div class="op1 flex items-center justify-center gap-1 mb-1">
+            <button class="clear border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+            w-13 h-13 rounded-2xl bg-white" data-value="">AC</button>
+            <button class="delete border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+            w-13 h-13 rounded-2xl bg-white"data-value=""><i class="fa-solid fa-delete-left"></i></button>
+            <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+            w-13 h-13 rounded-2xl bg-white "data-value=".">.</button>
+            <button class="result border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+            w-13 h-13 rounded-2xl bg-white" data-value="">=</button>
+        </div>
+        <div class="num-op2 flex items-start justify-center gap-1">
+            <div class="num grid grid-cols-3 gap-1">
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="1">1</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="2">2</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="3">3</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="4">4</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="5">5</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="6">6</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="7">7</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="8">8</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="9">9</button>
+                <div></div>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="0">0</button>
+            </div>
+            <div class="op2 flex flex-col items-center justify-center gap-1">
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="+">+</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="-">-</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="*">x</button>
+                <button class="border border-solid border-black flex items-center justify-center transition-opacity duration-150 hover:opacity-80 btn
+                 w-13 h-13 rounded-2xl bg-white" data-value="/">/</button>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
